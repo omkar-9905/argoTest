@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: ecgc_demo
-  name: ecgc_demo
+    app: ecgcdemo
+  name: ecgcdemo
   namespace: default
  spec:
    ports:
@@ -11,5 +11,5 @@ metadata:
    - protocol: TCP
      targetPort: 80
    selector:
-     app: ecgc_demo
+     app: ecgcdemo
    type: NodePort
